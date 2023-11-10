@@ -39,6 +39,7 @@ export default {
 
 	descColor: 'var(--primary-text-color)', // Description text color (left side)
 	descSize: 80, //Description text size (percent of standard text)
+	eventTitleSize: 14, //Title text size (px)
 
 	showNoEventsForToday: false,
 	noEventText: localize('common.noEventText'),

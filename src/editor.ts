@@ -399,6 +399,12 @@ export class AtomicCalendarReviveEditor extends ScopedRegistryHost(LitElement) i
 						label: localize('main.fields.allDayBottom'),
 						default: defaultConfig.allDayBottom,
 					},
+					{
+						type: 'text',
+						name: 'eventTitleSize',
+						label: localize('main.fields.eventTitleSize'),
+						default: defaultConfig.eventTitleSize,
+					},
 				],
 			},
 			event: {

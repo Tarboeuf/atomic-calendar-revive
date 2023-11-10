@@ -125,6 +125,8 @@ export function isHtml(input) {
 export function getTitleHTML(config: atomicCardConfig, event: EventClass, hass: HomeAssistant, mode: string) {
 	const titleColor: string =
 		typeof event.entityConfig.color != 'undefined' ? event.entityConfig.color : config.eventTitleColor;
+	const eventTitleSize: string =
+		typeof event.entityConfig.eventTitleSize != 'undefined' ? event.entityConfig.eventTitleSize : config.eventTitleSize;
 	const dayClassEventRunning = event.isRunning ? `running` : ``;
 	const textDecoration: string = event.isDeclined ? 'line-through' : 'none';
 	let { title } = event;
@@ -136,7 +138,7 @@ export function getTitleHTML(config: atomicCardConfig, event: EventClass, hass: 
 		return html`
 			<div
 				class="event-title ${dayClassEventRunning} ${mode}"
-				style="text-decoration: ${textDecoration};color: ${titleColor}"
+				style="text-decoration: ${textDecoration};color: ${titleColor};font-size${eventTitleSize}px"
 			>
 				${getEventIcon(config, event, hass)} ${title} ${getMultiDayEventParts(config, event)}
 			</div>

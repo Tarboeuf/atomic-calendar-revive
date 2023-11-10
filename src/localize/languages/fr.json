@@ -108,7 +108,8 @@
 			"secondary": "Paramètres globaux de couleur"
 		},
 		"fields": {
-			"dimFinishedEvents": "Diminuer la visibilité des événements terminés?"
+			"dimFinishedEvents": "Diminuer la visibilité des événements terminés?",
+			"eventTitleSize": "Taille du titre?"
 		}
 	}
 }
